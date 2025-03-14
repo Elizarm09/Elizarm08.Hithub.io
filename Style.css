@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    header img {
+    width: 80px; /* Ajusta el tamaño predeterminado */
+    height: 80px; /* Ajusta el tamaño predeterminado */
+    max-width: 120px; /* Tamaño máximo en pantallas grandes */
+    max-height: 120px; /* Tamaño máximo en pantallas grandes */
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 80%;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permitirá que los elementos se ajusten si es necesario */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#playlist {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+select, button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+#playerControls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    background: black;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    main {
+        margin-top: 15px;
+    }
+
+    #playlist {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    canvas {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: flex-start;
+    }
+
+    #playlist {
+        padding: 15px;
+    }
+
+    select, button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    canvas {
+        height: 80px;
+    }
+}
+img {
+    height:80px;
+}

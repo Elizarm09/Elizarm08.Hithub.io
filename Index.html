@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming de Música</title>
+    <link rel="icon" type="Imagen1.jpg" href="Imágenes/Imagen1.png"> <!-- Favicon agregado -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <img src="imágenes/Imagen1.png" alt="Logo">
+        <h1>Melody Map</h1>
+        <nav>
+            <ul>
+                <li><a href="https://open.spotify.com" target="_blank"><i class="fab fa-spotify"></i> Spotify</a></li>
+                <li><a href="https://music.youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube Music</a></li>
+                <li><a href="https://music.google.com" target="_blank"><i class="fab fa-google"></i> Google Music</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="playlist">
+            <label for="categorySelect">Seleccione Categoría:</label>
+            <select id="categorySelect">
+                <option value="" selected disabled>Elija una categoría</option>
+                <option value="Pop" data-color="#ADB2D4">Pop</option>
+                <option value="Salsa" data-color="#80CBC4"> Salsa </option>
+                <option value="Jazz" data-color="#C5705D">Jazz</option>
+                <option value="Clásica" data-color="#3D8D7A">Clásica</option>
+              
+            </select>
+            
+            <label for="songSelect">Seleccione Canción:</label>
+            <select id="songSelect" disabled>
+                <option value="" selected disabled>Elija una canción</option>
+            </select>
+            
+            <h3 id="songTitle">Disfruta tu canción</h3>
+
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div id="playerControls">
+                <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+                <button id="stopBtn"><i class="fas fa-stop"></i></button>
+                <button id="downloadBtn"><i class="fas fa-download"></i></button>
+            </div>
+            <canvas id="canvas"></canvas>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
